@@ -36,4 +36,13 @@ describe('Events', () => {
     // as it was set above
     events.dispatch('test');
   });
+
+  it('should pass data to event callback', done => {
+    const events = new Events();
+    events.listen('test', data => {
+      assert.deepEqual(data, {a:1, b:'2', c:3 });
+      done();
+    });
+    events.dispatch('test', {a:1, b:'2', c:3 });
+  });
 });

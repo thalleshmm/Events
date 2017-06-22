@@ -20,8 +20,11 @@ npm install --save-dev thalleshmm/events
 |Parameter|Type|Optional|Description|
 |---|---|---|---|
 |key|string|no|Events name|
+|data|*|yes|Data you want to pass to the event callback|
 
 ## Sample
+
+### Simple event callback
 
 ```JS
 import Events from 'thalleshmm-events';
@@ -31,6 +34,20 @@ events.listen('PLAY', () => { alert('Event fired') });
 setTimeout(() => {
     events.dispatch('PLAY');
 }, 1000);
+```
+
+### Passing data to event callback
+
+```JS
+import Events from 'thalleshmm-events';
+
+const events = new Events();
+events.listen('CLICK', name => { alert('Hello ' + name); });
+
+const btn = document.querySelector('button');
+btn.addEventListener('click', () => {
+    events.dispatch('PLAY', 'John');
+});
 ```
 
 ## Licence

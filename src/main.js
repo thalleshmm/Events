@@ -28,7 +28,7 @@ export default class {
         this._events[key].push(fn);
     }
 
-    dispatch(key) {
+    dispatch(key, data) {
         // If key is not a string, throw error
         if (typeof key !== 'string') {
             throw 'Parameter \'key\' is not a string.';
@@ -42,6 +42,6 @@ export default class {
         if (!(key in this._events)) return;
 
         // Run all functions in the event array
-        this._events[key].forEach(fn => fn());
+        this._events[key].forEach(fn => fn(data));
     }
 }
