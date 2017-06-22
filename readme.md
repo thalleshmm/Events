@@ -42,11 +42,11 @@ setTimeout(() => {
 import Events from 'thalleshmm-events';
 
 const events = new Events();
-events.listen('CLICK', name => { alert('Hello ' + name); });
+events.listen('HELLO_NAME', name => { alert('Hello ' + name); });
 
 const btn = document.querySelector('button');
 btn.addEventListener('click', () => {
-    events.dispatch('PLAY', 'John');
+    events.dispatch('HELLO_NAME', 'John');
 });
 ```
 
