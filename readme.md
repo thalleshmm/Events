@@ -1,11 +1,11 @@
-# TEvents
+# T-Events
 
 Listen and dispatch events =) Not much else to say.
 
 ## Installing via NPM
 
 ```
-npm install --save-dev thalleshmm/tevents
+npm install --save-dev thalleshmm/t-events
 ```
 
 ## Methods
@@ -24,7 +24,7 @@ npm install --save-dev thalleshmm/tevents
 ## Sample
 
 ```JS
-import Events from 'tevents';
+import Events from 't-events';
 
 const events = new Events();
 events.listen('PLAY', () => { alert('Event fired') });
