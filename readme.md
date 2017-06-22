@@ -2,6 +2,12 @@
 
 Listen and dispatch events =) Not much else to say.
 
+## Installing via NPM
+
+```
+npm install --save-dev thalleshmm/events
+```
+
 ## Methods
 
 ### Listen
@@ -18,7 +24,7 @@ Listen and dispatch events =) Not much else to say.
 ## Sample
 
 ```JS
-import Events from './events';
+import Events from 'events';
 
 const events = new Events();
 events.listen('PLAY', () => { alert('Event fired') });

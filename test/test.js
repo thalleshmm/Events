@@ -1,6 +1,6 @@
 import 'babel-polyfill';
 import assert from 'assert';
-import Events from '../events';
+import Events from '../src/main';
 
 describe('Events', () => {
   it('should dispatch event being listened', done => {
