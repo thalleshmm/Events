@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/thalleshmm/Events.git"
+    "url": "git+https://github.com/thalleshmm/TEvents.git"
   },
   "author": "@thalleshmm",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/thalleshmm/Events/issues"
+    "url": "https://github.com/thalleshmm/TEvents/issues"
   },
-  "homepage": "https://github.com/thalleshmm/Events#readme",
+  "homepage": "https://github.com/thalleshmm/TEvents#readme",
   "babel": {
     "presets": ["es2015"]
   },
